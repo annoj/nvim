@@ -7,6 +7,14 @@ require("tabset").setup({
         c = {
             tabwidth = 8,
             expandtab = true
+        },
+        cpp = {
+            tabwidth = 8,
+            expandtab = true
+        },
+        terraform = {
+            tabwidth = 2,
+            expandtab = true
         }
     }
 })
