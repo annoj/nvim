@@ -1,7 +1,7 @@
 require("tabset").setup({
     defaults = {
         tabwidth = 4,
-        expandtab = true
+        expandtab = false
     },
     languages = {
         c = {
