@@ -4,3 +4,6 @@ vim.keymap.set('n', '<leader>gf', builtin.git_files, {})
 vim.keymap.set('n', '<leader>ps', function()
 	builtin.grep_string({ search = vim.fn.input("grep > ") })
 end)
+
+-- Enable dap-extension
+require'telescope'.load_extension('dap')

@@ -40,6 +40,7 @@ return require('packer').startup(function(use)
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' }, -- Required
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
+            { 'hrsh7th/cmp-nvim-lua' }, -- Required
             { 'L3MON4D3/LuaSnip' }, -- Required
             { 'hrsh7th/cmp-path' }
         }
@@ -59,4 +60,13 @@ return require('packer').startup(function(use)
             require('nvim-terminal').setup()
         end,
     }
+
+    -- Debugger stuff
+    use 'mfussenegger/nvim-dap'
+    use 'rcarriga/nvim-dap-ui'
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'nvim-telescope/telescope-dap.nvim'
+    use 'mortepau/codicons.nvim'
+
+    use 'tjdevries/stackmap.nvim'
 end)
