@@ -39,7 +39,16 @@ return require('packer').startup(function(use)
 		branch = 'v2.x',
 		requires = {
 			-- LSP Support
-			{ 'neovim/nvim-lspconfig' }, -- Required
+			{
+				'neovim/nvim-lspconfig',
+				opts = {
+					servers = {
+						clangd = {
+							mason = false
+						}
+					}
+				}
+			}, -- Required
 			{
 				-- Optional
 				'williamboman/mason.nvim',
