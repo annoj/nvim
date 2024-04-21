@@ -1,7 +1,7 @@
 require("tabset").setup({
     defaults = {
         tabwidth = 4,
-        expandtab = false
+        expandtab = true
     },
     languages = {
         c = {
@@ -15,6 +15,6 @@ require("tabset").setup({
         terraform = {
             tabwidth = 2,
             expandtab = true
-        }
+        },
     }
 })
